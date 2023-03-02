@@ -7,7 +7,7 @@ def load_model(model_name):
     pipe = StableDiffusionPipeline.from_pretrained(model_name, torch_dtype=torch.float16)
     return pipe
 
-models = load_model("CompVis/stable-diffusion-v1-4")
+models = load_model("CompVis/stable-diffusion-v1-2")
 models = models.to("cuda")
 
 
