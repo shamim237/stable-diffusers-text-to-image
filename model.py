@@ -8,7 +8,7 @@ def load_model(model_name):
     return pipe
 
 models = load_model("CompVis/stable-diffusion-v1-4")
-models = models.to("cuda")
+models = models.to("cpu")
 
 
 def generate_image(prompt):
